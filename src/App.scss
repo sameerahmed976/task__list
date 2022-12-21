@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+    /* Typography */
+    --regular-font: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+
+    --heading-font: "Lato", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        monospace, sans-serif;
+
+    /* h5 font size paragraph */
+    /* start of for small mobile  (576px and down) */
+    /* start of for mobile  (576px and up) */
+
+    /* start of for mobile */
+
+    --font-size-h1: 2.488rem;
+
+    --font-size-h2: 2.074rem;
+
+    --font-size-h3: 1.728rem;
+
+    --font-size-h4: 1.44rem;
+
+    --font-size-h5: 1.2rem;
+
+    /* major third 1.200 */
+    /* end of for mobile */
+
+    --font-size-h6: 1rem;
+
+    --box-shadow-1: 1px 2px 2px #000, -1px -2px 2px #000;
+    --box-shadow-2: 2px 4px 6px #000;
+
+    --transition-8: all 0.8s ease-in-out;
+    /* colors */
+    --primary-color: #1A120B;
+    --secondary-color: #3C2A21;
+    --tertiary-color: #D5CEA3;
+    --background-color: #E5E5CB;
+
+    --gradient: linear-gradient(21deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--regular-font);
+    font-size: 100%;
+    background: var(--gradient) no-repeat center/cover;
+    min-height: 100vh;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/* mobile */
+
+h1 {
+    font-size: var(--font-size-h1);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+}
+
+h4 {
+    font-size: var(--font-size-h4);
+}
+
+h5 {
+    font-size: var(--font-size-h5);
+}
+
+h6 {
+    font-size: var(--font-size-h6);
+}
+
+p {
+    font-size: var(--font-size-h5);
+}
+
+
+.btn{
+    display: block;
+    padding: .5rem 1rem;
+    font-size: var(--font-size-h5);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: var(--tertiary-color);
+    margin: 0 auto;
+    margin-bottom: 1rem;
+border: none;
+border: 1px solid var(--primary-color);
+transition: var(--transition-8);
+cursor: pointer;
+border-radius: .5rem;
+}
+
+
+.btn:hover{
+    background-color: var(--secondary-color);
+    color: black;
+    transform: translateY(5px);
+}
+
+
+
+
+
+
